@@ -1,0 +1,13 @@
+# local package
+-e .
+
+# external requirements
+{% if cookiecutter.use_dvc == "yes" -%}
+dvc
+	{%- if cookiecutter.remote_storage == "hdfs" %}
+pyarrow
+	{%- elif cookiecutter.remote_storage == "s3" %}
+boto3
+awscli
+	{%- endif %}
+{% endif %}
