@@ -12,14 +12,7 @@ Based on [drivendata.github.io/cookiecutter-data-science](http://drivendata.gith
  - [Poetry Dependency Manager](https://github.com/python-poetry/poetry) >= 1.1.0
 
 ``` bash
-pip install cookiecutter
-```
-
-or
-
-``` bash
-conda config --add channels conda-forge
-conda install cookiecutter
+pip install cookiecutter poetry
 ```
 
 ### To start a new project, run:
